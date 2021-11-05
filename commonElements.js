@@ -1,19 +1,15 @@
 function solve(arr1, arr2){
 
-for(let i = 0; i < arr1.length ; i ++){
+for(const el of arr1){
 
-    for(let j = 0; j < arr2.length ; j ++){
+    let isCommon = arr2.includes(el);
+    if(isCommon){
 
-    if(arr1[i] == arr2[j]){
-
-        console.log(arr1[i]);
-        console.log(arr2[j]);
-        
+        console.log(el);
     }
-}
-}
 
-
+    
+}
 }
 
 solve(['Hey', 'hello', 2, 4, 'Peter', 'e'],
